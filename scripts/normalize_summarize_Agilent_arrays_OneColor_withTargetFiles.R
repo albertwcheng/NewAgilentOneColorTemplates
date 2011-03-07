@@ -16,7 +16,7 @@ origPath=getwd()
 setwd("../raw")
 
 
-spotTypeFileName="SpotTypes.txt"
+#spotTypeFileName="SpotTypes.txt"
 targetFileName="targets.txt"
 
 outputPrefix="../limmaOutput"
@@ -26,7 +26,7 @@ withControlPath="withControl"
 library(limma)
 
 targets=readTargets(targetFileName)
-spottypes <- readSpotTypes(spotTypeFileName)
+#spottypes <- readSpotTypes(spotTypeFileName)
 #scanFiles = dir(pattern = ".*.txt$") #not using simple txt pattern match, use target file!~
 num.arrays = length(targets$FileName)
 
